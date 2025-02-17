@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 100;
+    transition: all 0.1s ease;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to left, #030303, #030303); /* 3d0000 is a really good red... */
+    padding: 15px 30px;
+    font-size: 24px;
+    /* border-bottom: 2px ridge rgb(22, 22, 22); */
+}
+.nav-main-container {
+    background-color: #242424;
+    background-image: url('../resources/images/codebg.png'); /* BACKGROUND IMAGE HERE */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+.nav-links {
+    list-style: none;
+    display: flex; /* this one keeps it horizontal... */
+    align-items: center;
+    gap: 20px;
+}
+.nav-links a {
+    display: inline-block;
+    font-size: 24px;
+}
+.nav-links li {
+    margin-right: 25px;
+}
+.nav-links a:hover {
+    /* color: aliceblue; */
+    transform: translate3d(-3px, -3px, 0px);
+    scale: 1.02;
+    text-shadow: 0 0 5px rgb(86, 176, 255), 0 0 30px rgb(86, 176, 255), 0 0 5px rgb(86, 176, 255);
+}
+.right-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.right-bar ul a {
+    text-decoration: none;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.container-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 150px;
+    padding: 20px;
+    /* border: 3px outset red; */
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.65);
+}
+.left-main, .right-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: .45;
+}
+.right-main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.right-main img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+.left-main h1 {
+    font-size: 64px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+    letter-spacing: -1px;
+}
+.left-main h2 {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-wrap: wrap;
+    letter-spacing: 1px;
+}
+.latex-right a:hover {
+    transform: translate3d(-3px, -3px, 0px);
+    border-radius: 9px;
+    text-shadow: 0 0 5px rgb(86, 176, 255), 0 0 30px rgb(86, 176, 255), 0 0 5px rgb(86, 176, 255);
+}
+.latex-right a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: #0a0a0a;
+    padding: 15px 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../resources/images/codebg.png'); /* BACKGROUND IMAGE HERE */
+    background-size: cover;
+    background-attachment: fixed;
+    letter-spacing: 1px;
+    padding: 20px 20px;
+    /* padding: 50px; */
+    /* border-top: 2px ridge rgb(22, 22, 22); */
+    /* border-bottom: 2px ridge rgb(22, 22, 22); */
+}
+.info-container h1 {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:  0 0 50px black, 0 0 30px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0);
+}
+.models-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.65);
+    padding: 20px 20px;
+}
+.models-container img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 9px;
+    /* border: 4px ridge white; */
+}
+.model {
+    padding-inline: 50px;
+    text-align: center;
+}
+.model h2 {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.model img:hover {
+    /* box-shadow: 0 0 15px #ffffff; */
+    scale: 1.05;
+}
+.latex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 20px;
+    /* background-image: linear-gradient(to top, #030303, #030303); */
+    /* background-color: black; */
+    /* border-top: 2px ridge rgb(22, 22, 22); */
+}
+.latex-box {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px outset rgb(255, 255, 255); */
+    flex-direction: row;
+    padding: 30px 30px;
+}
+.latex-left {
+    display: flex;
+    padding-inline: 20px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer h1 {
+    margin: 0;
+    font-size: 24px;
+}
