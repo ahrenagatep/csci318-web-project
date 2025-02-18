@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to left, #030303, #030303); /* this is kinda redundant */
+    background-image: linear-gradient(to bottom, #161616, #000000); /* #030303 for black but not rlly */
     padding: 15px 30px;
     font-size: 24px;
     /* border-bottom: 2px ridge rgb(22, 22, 22); */
@@ -57,13 +57,15 @@
 }
 .container-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* ORIGINAL space-around */
     align-items: center;
     margin: 50px 150px;
     padding: 20px;
     /* border: 3px outset red; */
     border-radius: 8px;
     background-color: rgba(0,0,0,0.65);
+
+    position: relative;
 }
 .left-main, .right-main {
     display: flex;
@@ -162,7 +164,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-image: linear-gradient(to bottom, #000000, #080808, #000000); /* #030303 for black but not rlly */
     padding: 20px 20px;
     /* background-image: linear-gradient(to top, #030303, #030303); */
     /* background-color: black; */
@@ -188,4 +190,45 @@
 .footer h1 {
     margin: 0;
     font-size: 24px;
+}
+
+/* POTENTIAL CODE */
+
+.carousel {
+    width: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: left;
+}
+.person h1, h2 {
+    padding-bottom: 10px;
+}
+.person img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
 }
