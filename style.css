@@ -7,6 +7,9 @@
     font-weight: 100;
     transition: all 0.1s ease;
 }
+html {
+    scroll-behavior: smooth;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
