@@ -4,11 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CSCI 318</title>
+    <link rel="icon" type="image/x-icon" href="../resources/images/icon.png">
 </head>
 <body>
     <div class="nav-main-container">
         <nav class = "navbar">
             <div class = "left-bar">
+                <img src="../resources/images/icon.png" style="height: 50px;">
                 <h1>CSCI 318 W01: Programming Language Concepts</h1>
             </div>
             <div class = "right-bar">
@@ -18,56 +20,64 @@
                 </ul>
             </div>
         </nav>
-        <section id="about">
-            <div class="container-main">
-                <script src="profileScroll.js"></script>
-                <button class="prev" onclick="prevSlide()">&#10094;</button>
-                <div class="carousel">
-                    <h1>Team Introductions:</h1>
-                    <div class="carousel-track">
-                        <div class="person">
-                            <div class="person-info">
-                                <h1>Ahren Agatep</h1>
-                                <h2>Second-year student at NYIT studying computer science.</h2>
-                                <h2>Interests: working out, rock climbing, playing video games.</h2>
-                                <h2>Currently learning: basic front-end development, making this website.</h2>
-                            </div>
-                            <div class="person-image">
-                                <img src="../resources/images/aagatep.jpg" style="border-radius: 4px;">
-                            </div>
+        <div class="container-main">
+            <!-- <div class="left-main">
+                <h1 style="padding-top: 30px;">Ahren Agatep</h1>
+                <h2 style="padding-bottom: 30px;">Second year student at New York Institute of Technology studying computer science.
+                    Currently learning: front-end development.</h2>
+            </div>
+            <div class="right-main">
+                <img src="../resources/images/aagatep.jpg" alt="Nerv HQ" style="border-radius: 4px;">
+            </div> -->
+            <script src="profileScroll.js"></script>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel">
+                <h1>Team Introductions:</h1>
+                <div class="carousel-track">
+                    <div class="person">
+                        <div class="person-info">
+                            <h1>Ahren Agatep</h1>
+                            <h2>Second-year student at NYIT studying computer science.</h2>
+                            <h2>Interests: working out, rock climbing, playing video games.</h2>
+                            <h2>Currently learning: basic front-end development, making this website.</h2>
+                            <h2>Connect with me: <a href="https://www.linkedin.com/in/ahrenagatep/">LinkedIn</a></h2>
                         </div>
-                        <div class="person">
-                            <div class="person-info">
-                                <h1>Person 2</h1>
-                                <h2>INSERT INFORMATION HERE FOR PERSON 2</h2>
-                            </div>
-                            <div class="person-image">
-                                <img src="../resources/images/blank.jpg" style="border-radius: 4px;">
-                            </div>
+                        <div class="person-image">
+                            <img src="../resources/images/aagatep.jpg" style="border-radius: 4px;">
                         </div>
-                        <div class="person">
-                            <div class="person-info">
-                                <h1>Person 3</h1>
-                                <h2>INSERT INFORMATION HERE FOR PERSON 3</h2>
-                            </div>
-                            <div class="person-image">
-                                <img src="../resources/images/blank.jpg" style="border-radius: 4px;">
-                            </div>
+                    </div>
+                    <div class="person">
+                        <div class="person-info">
+                            <h1>Matthew Aitken</h1>
+                            <h2>INSERT INFORMATION HERE FOR PERSON 2</h2>
                         </div>
-                        <div class="person">
-                            <div class="person-info">
-                                <h1>Person 4</h1>
-                                <h2>INSERT INFORMATION HERE FOR PERSON 4</h2>
-                            </div>
-                            <div class="person-image">
-                                <img src="../resources/images/blank.jpg" style="border-radius: 4px;">
-                            </div>
+                        <div class="person-image">
+                            <img src="../resources/images/blank.jpg" style="border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="person-info">
+                            <h1>Rabdeep Singh</h1>
+                            <h2>INSERT INFORMATION HERE FOR PERSON 3</h2>
+                        </div>
+                        <div class="person-image">
+                            <img src="../resources/images/blank.jpg" style="border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="person-info">
+                            <h1>Joseph Taddeo</h1>
+                            <h2>INSERT INFORMATION HERE FOR PERSON 4</h2>
+                        </div>
+                        <div class="person-image">
+                            <img src="../resources/images/blank.jpg" style="border-radius: 4px;">
                         </div>
                     </div>
                 </div>
-                <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>
-        </section>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            
+        </div>
     </div>
     <div class="latex-container">
         <div class="latex-box">
@@ -102,6 +112,9 @@
         <h1>
             Created by: Ahren Agatep
         </h1>
+        <a href="https://github.com/ahrenagatep/csci318-web-project">
+            <img src="../resources/images/github.png" style="height: 50px;">
+        </a>
     </div>
 </body>
 </html>
