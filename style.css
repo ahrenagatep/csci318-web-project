@@ -27,7 +27,7 @@ html {
 }
 .nav-main-container {
     background-color: #242424;
-    background-image: url('../resources/images/thislookscool.gif'); /* BACKGROUND IMAGE HERE */
+    background-image: url('resources/images/thislookscool.gif'); /* BACKGROUND IMAGE HERE */
     background-size: cover;
     background-attachment: fixed;
     height: 500;
@@ -129,7 +129,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('../resources/images/thislookscool.gif'); /* BACKGROUND IMAGE HERE */
+    background-image: url('resources/images/thislookscool.gif'); /* BACKGROUND IMAGE HERE */
     background-size: cover;
     background-attachment: fixed;
     letter-spacing: 1px;
